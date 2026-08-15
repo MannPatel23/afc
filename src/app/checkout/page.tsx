@@ -618,7 +618,7 @@ export default function CheckoutPage() {
                 <div>
                   <p className="font-sans font-semibold text-sm text-dark">Ambica Food Corner</p>
                   <p className="font-sans text-sm text-muted">Vaso Circle, Vaso, Gujarat 387380</p>
-                  <p className="font-sans text-xs text-faint mt-0.5">~15 min ready time</p>
+                  <p className="font-sans text-xs text-faint mt-0.5">~30 min ready time</p>
                 </div>
               </div>
             ) : (
