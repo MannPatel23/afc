@@ -2,6 +2,7 @@ import Link from "next/link"
 import { sdk } from "@/lib/medusa"
 import PopularDishes from "@/components/PopularDishes"
 import HeroPhoto from "@/components/HeroPhoto"
+import DeliveryAreasMarquee from "@/components/DeliveryAreasMarquee"
 
 // The landing page rarely changes; cache it like any other marketing page.
 export const revalidate = 60
@@ -142,6 +143,8 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      <DeliveryAreasMarquee />
 
       <PopularDishes products={products} />
 

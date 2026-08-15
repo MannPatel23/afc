@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
+import DeliveryAreasMarquee from "@/components/DeliveryAreasMarquee"
 
 export const metadata: Metadata = {
   title: "About Us — Ambica Food Corner",
@@ -168,6 +169,21 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Where We Deliver */}
+      <section aria-labelledby="delivery-heading" className="mb-16">
+        <p
+          className="font-mono text-xs uppercase tracking-[0.07em] mb-4"
+          style={{ color: "var(--color-amber)" }}
+        >
+          Where We Deliver
+        </p>
+        <p className="font-sans text-sm text-muted leading-relaxed mb-6">
+          We currently deliver fresh to the villages below — and we&apos;re
+          growing. Soon we&apos;ll be delivering everywhere nearby.
+        </p>
+        <DeliveryAreasMarquee variant="card" />
       </section>
 
       {/* Our Promise & Footer CTA */}

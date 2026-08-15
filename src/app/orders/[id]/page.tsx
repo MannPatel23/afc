@@ -198,7 +198,7 @@ export default async function OrderPage({
           <p className="font-mono text-xs text-faint uppercase tracking-[0.07em]">
             Est. ready
           </p>
-          <p className="font-mono text-sm text-dark mt-0.5">~15 min</p>
+          <p className="font-mono text-sm text-dark mt-0.5">~30 min</p>
         </div>
       </div>
 

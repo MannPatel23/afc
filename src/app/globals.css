@@ -120,6 +120,32 @@ body {
   }
 }
 
+/* Content is duplicated once by the caller, so -50% is exactly one copy's
+   width — the loop point lines up seamlessly regardless of viewport size. */
+@keyframes afc-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.afc-marquee {
+  animation: afc-marquee 26s linear infinite;
+}
+
+/* Fades the strip's edges instead of hard-clipping a village name mid-word,
+   and pauses the scroll on hover so a name can actually be read. */
+.afc-marquee-viewport {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.afc-marquee-viewport:hover .afc-marquee {
+  animation-play-state: paused;
+}
+
 .afc-scrollbar-hide {
   scrollbar-width: none;
   -ms-overflow-style: none;
